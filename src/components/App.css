@@ -1,0 +1,101 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+#navItems {
+    float: right;
+  }
+
+#lazado{
+    margin:10px;
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+  
+li a:hover {
+    background-color: #111111;
+}
+
+.allitems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.itemcard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+
+}
+.itemcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#itemimage {
+    border-radius: 5px 5px 0 0;
+}
+
+.itemdetails {
+    padding: 2px 16px;
+    background-color: orange;
+    align-items: center;
+}
+
+.addtocart {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .addtocart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .addtocart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .addtocart:hover span {
+    padding-right: 25px;
+  }
+  
+  .addtocart:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

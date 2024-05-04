@@ -1,26 +1,29 @@
 import SubjectList from "./SubjectList";
+import CreateMenu from "./components/Menu";
+import ShoppingItems from "./components/Items"
 
-const CMSCSubjects = [
-  { code: "CMSC100", description: "Web Programming", id: 1 },
-  { code: "CMSC150", description: "Scientific Computation", id: 2 },
-  { code: "CMSC22", description: "Object-Oriented Programming", id: 3 },
-];
+const menus = [
+  { name: "Clothing", url: "#", id: 4},
+  { name: "Gadgets", url: "#", id: 3},
+  { name: "Groceries", url: "#", id: 2},
+  { name: "Appliances", url: "#", id: 1},
+]; 
 
-const CHEMSubjects = [
-  { code: "CHEM100", description: "Introduction to Organic Chemistry", id: 1 },
-  { code: "CHEM10", description: "Chemical Kinetics", id: 2 },
-  { code: "CHEM11", description: "Introduction to Biochemistry", id: 3 },
+const items = [
+  { name: "Frying pan", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 4},
+  { name: "Pillow", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 3},
+  { name: "Tumbler", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 2},
+  { name: "Fan", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 1},
 ];
 
 
 
 function App() {
+  
   return (
     <div>
-      Hello World
-      <SubjectList data={CMSCSubjects} title = {'Computer Science Subjects'}/>
-      <SubjectList data={CHEMSubjects}
-      title = {'CHEM Subjects'} />
+      <CreateMenu data = {menus} />
+      <ShoppingItems data= {items} />
     </div>
   );
 }
