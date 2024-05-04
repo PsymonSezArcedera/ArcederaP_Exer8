@@ -11,7 +11,7 @@ function ShoppingItems(props){
                         return <div class = "itemcard">
                             <img src={products.url} alt="Item" id="itemimage"></img>
                             <div class = "itemdetails"><h4>{products.name}</h4></div>
-                            <button class="addtocart"><span>ADD TO CART</span></button>
+                            <button class="addtocart"><span>ADD</span></button>
                         </div>
                     })
                 }

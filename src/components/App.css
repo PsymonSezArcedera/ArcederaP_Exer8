@@ -43,47 +43,53 @@ li a:hover {
     margin: 10px;
     transition: 0.3s;
     width: 20%;
-    border-radius: 5px;
+    border-radius: 25px;
 
 }
 .itemcard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
 }
 
 #itemimage {
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
 }
 
 .itemdetails {
     padding: 2px 16px;
     background-color: orange;
     align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 15px;
 }
 
 .addtocart {
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 24px;
     background-color: #f4511e;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
+    font-size: 20px;
+    padding: 15px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 25px;
   }
   
-  .addtocart span {
+.addtocart span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
   .addtocart span:after {
-    content: '\00bb';
+    content: '\002B';
     position: absolute;
     opacity: 0;
     top: 0;

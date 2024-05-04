@@ -13,7 +13,8 @@ const items = [
   { name: "Frying pan", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 4},
   { name: "Pillow", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 3},
   { name: "Tumbler", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 2},
-  { name: "Fan", url: "https://i.ebayimg.com/00/s/MTEyNVgxNjAw/z/fZAAAOSwvEFjV~wQ/$_1.PNG", id: 1},
+  { name: "Fan", url: "https://fukuda-asia.com/wp-content/uploads/2021/11/FG108-1.jpg", id: 1},
+  
 ];
 
 
