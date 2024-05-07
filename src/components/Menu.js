@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-
+//Functionn for creating menu
 function CreateMenu(props){
     let menuItems = props.data
 

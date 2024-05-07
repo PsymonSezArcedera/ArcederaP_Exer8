@@ -7,10 +7,12 @@ function ShoppingItems(props){
     let shoppingItems = props.data
     let cartItems = props.cart
 
+    //Function for updating the total number of items in the cart
     function addCart(products){
         setVal((prev) => prev+1)
     }
     
+    //Function for adding item in the cart
     function addItem(products){
         setItem((items) => {
             const nval = [...items, {name:products.name, quantity:1}];
@@ -19,6 +21,7 @@ function ShoppingItems(props){
         });
     }
 
+    //Function for deleting item in the cart 
     function deleteItem(product){
         setItem((items) =>{
             const nval = items.filter((item) => item !== product);
@@ -30,7 +33,6 @@ function ShoppingItems(props){
 
     const [val,setVal] = useState(props.val);
     const [items, setItem] = useState(cartItems)
-
 
     return(
         <div>
