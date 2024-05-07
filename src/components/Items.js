@@ -8,7 +8,7 @@ function ShoppingItems(props){
     let cartItems = props.cart
 
     function addCart(products){
-        setVal((prev) => prev+products.price)
+        setVal((prev) => prev+1)
     }
     
     function addItem(products){
@@ -18,6 +18,15 @@ function ShoppingItems(props){
             return nval;
         });
     }
+
+    function deleteItem(product){
+        setItem((items) =>{
+            const nval = items.filter((item) => item !== product);
+            return nval;
+        })
+        setVal((prev) => prev-1)
+    }
+
 
     const [val,setVal] = useState(props.val);
     const [items, setItem] = useState(cartItems)
@@ -38,14 +47,14 @@ function ShoppingItems(props){
             </ol>
 
             <div class = "shoppingcart">
-                <h2>Total: {val}</h2>
+                <div class="total"><h2>Total: {val}</h2></div>
                 <ol class = "cartitems">
                     {
                         items.map((items) =>{
                             return <div class = "cartitemcard">
                                 <h4>{items.name}</h4>
                                 <h5>QTY: {items.quantity}</h5>
-                                <button>ADD</button>
+                                <button onClick={()=>{deleteItem(items)}}>DELETE</button>
                             </div>
                         })
                     }
